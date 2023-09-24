@@ -2,7 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-from math import log
+
 
 def lei(le: float):
     undiv = le - 20
@@ -49,6 +49,8 @@ def mainloop():
     gnipc = float(input("Enter GNI per capita:\n"))
     HumanDI = hdi(le, mys, eys, gnipc)
     from tkinter import messagebox as MsgBox
+    import NewLine
+    NewLine.Run("-", 50, "HDI Calculated: %s" % HumanDI)
     MsgBox.showinfo("HDI Calculator", "Country's HDi is: %s" % HumanDI)
     mainloop()
 
